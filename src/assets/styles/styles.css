@@ -1,0 +1,12 @@
+h1 {
+    font-size: 3em;
+}
+
+.contact-node{
+    font-size: 25px;
+
+}
+
+.selected-node {
+    background-color: rgb(173,216,230);
+}

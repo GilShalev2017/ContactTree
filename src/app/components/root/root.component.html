@@ -1,0 +1,11 @@
+<h1>Contact Tree</h1>
+
+<div>
+    <!--//collapsable-->
+    <ul>
+        <contact *ngFor="let contact of contacts"
+                 [contact]="contact"
+                 (selectionChanged)="onSelectionChanged($event)"></contact>
+
+    </ul>
+</div>

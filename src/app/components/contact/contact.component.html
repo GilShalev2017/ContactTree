@@ -1,0 +1,13 @@
+<div class="contact-node" >
+    <div [class.selected-node]="contact.isSelected">
+        <label (click)="changeState()" >{{contact.name}}</label>
+    </div>
+
+    <div *ngIf="contact.contacts && contact.state===true">
+        <ul>
+            <contact *ngFor="let contact of contact.contacts"
+                     [contact]="contact"
+                     (selectionChanged)="onSelectionChanged($event)"></contact>
+        </ul>
+    </div>
+</div>
